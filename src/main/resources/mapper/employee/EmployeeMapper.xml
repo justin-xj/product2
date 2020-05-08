@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.justin.product2.mybatis.mapper.EmployeeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.justin.product2.mybatis.entity.Employee">
+        <id column="emp_no" property="empNo" />
+        <result column="birth_date" property="birthDate" />
+        <result column="first_name" property="firstName" />
+        <result column="last_name" property="lastName" />
+        <result column="gender" property="gender" />
+        <result column="hire_date" property="hireDate" />
+    </resultMap>
+
+</mapper>

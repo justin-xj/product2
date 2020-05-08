@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/product?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: admin
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: not_null
+      table-underline: true
+      db-type: mysql
+  mapper-locations: mapper/*/*.xml
